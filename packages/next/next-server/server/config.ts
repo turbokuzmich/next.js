@@ -12,6 +12,7 @@ const reactModes = ['legacy', 'blocking', 'concurrent']
 const defaultConfig: { [key: string]: any } = {
   env: [],
   webpack: null,
+  middleware: null,
   webpackDevMiddleware: null,
   distDir: '.next',
   assetPrefix: '',

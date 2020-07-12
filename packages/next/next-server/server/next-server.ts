@@ -840,6 +840,14 @@ export default class Server {
       return this.render404(req, res, parsedUrl)
     }
 
+    if (this.nextConfig.middleware) {
+      const error = await this.nextConfig.middleware(req, res)
+
+      if (error) {
+        return this.renderError(error, req, res, pathname, query)
+      }
+    }
+
     const html = await this.renderToHTML(req, res, pathname, query)
     // Request was ended by the user
     if (html === null) {

@@ -1,0 +1,30 @@
+{
+  "name": "next-middleware",
+  "version": "9.4.5-canary.28",
+  "description": "Express middleware for next.js",
+  "keywords": [
+    "next",
+    "middleware"
+  ],
+  "author": "kurteev.d@yandex.ru",
+  "homepage": "https://github.com/vercel/next.js#readme",
+  "license": "ISC",
+  "main": "lib/next-middleware.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vercel/next.js.git"
+  },
+  "dependencies": {
+    "next": "9.4.5-canary.28"
+  },
+  "peerDependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {}
+}
